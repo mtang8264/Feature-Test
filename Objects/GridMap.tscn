@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://dsffvb76glniu"]
+
+[ext_resource type="PackedScene" uid="uid://c8djpg385hh2h" path="res://Models/Blank_Grid_Tiles.blend" id="1_mn40d"]
+[ext_resource type="Material" uid="uid://d23ibd7ai6s56" path="res://Materials/Mat_Test.tres" id="2_1eoqq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1eoqq"]
+size = Vector3(2, 0.5, 2)
+
+[node name="GridTIles" unique_id=545163925 instance=ExtResource("1_mn40d")]
+
+[node name="Open" parent="." index="0" unique_id=2066185730]
+surface_material_override/0 = ExtResource("2_1eoqq")
+
+[node name="FloorCollision" type="StaticBody3D" parent="Open" index="0" unique_id=1060327084]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Open/FloorCollision" index="0" unique_id=1709644130]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+shape = SubResource("BoxShape3D_1eoqq")
+
+[node name="Wall_N" parent="." index="1" unique_id=1617787412]
+surface_material_override/0 = ExtResource("2_1eoqq")
+
+[node name="FloorCollision" type="StaticBody3D" parent="Wall_N" index="0" unique_id=1033449154]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_N/FloorCollision" index="0" unique_id=901293128]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+shape = SubResource("BoxShape3D_1eoqq")
+
+[node name="Wall_E" parent="." index="2" unique_id=27961819]
+surface_material_override/0 = ExtResource("2_1eoqq")
+
+[node name="FloorCollision" type="StaticBody3D" parent="Wall_E" index="0" unique_id=1487104656]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_E/FloorCollision" index="0" unique_id=1192515927]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+shape = SubResource("BoxShape3D_1eoqq")
+
+[node name="Wall_S" parent="." index="3" unique_id=1751857093]
+surface_material_override/0 = ExtResource("2_1eoqq")
+
+[node name="FloorCollision" type="StaticBody3D" parent="Wall_S" index="0" unique_id=1524666695]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_S/FloorCollision" index="0" unique_id=1771927654]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+shape = SubResource("BoxShape3D_1eoqq")
+
+[node name="Wall_W" parent="." index="4" unique_id=1869044733]
+surface_material_override/0 = ExtResource("2_1eoqq")
+
+[node name="FloorCollision" type="StaticBody3D" parent="Wall_W" index="0" unique_id=888617628]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_W/FloorCollision" index="0" unique_id=1004045561]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+shape = SubResource("BoxShape3D_1eoqq")
+
+[node name="Wall_SW" parent="." index="5" unique_id=1894339017]
+surface_material_override/0 = ExtResource("2_1eoqq")
+
+[node name="FloorCollision" type="StaticBody3D" parent="Wall_SW" index="0" unique_id=728020903]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_SW/FloorCollision" index="0" unique_id=1812325916]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+shape = SubResource("BoxShape3D_1eoqq")
+
+[node name="Wall_NW" parent="." index="6" unique_id=846177570]
+surface_material_override/0 = ExtResource("2_1eoqq")
+
+[node name="FloorCollision" type="StaticBody3D" parent="Wall_NW" index="0" unique_id=1513598309]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_NW/FloorCollision" index="0" unique_id=1069493584]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+shape = SubResource("BoxShape3D_1eoqq")
+
+[node name="Wall_SE" parent="." index="7" unique_id=139707807]
+surface_material_override/0 = ExtResource("2_1eoqq")
+
+[node name="FloorCollision" type="StaticBody3D" parent="Wall_SE" index="0" unique_id=820922412]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_SE/FloorCollision" index="0" unique_id=1877877799]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+shape = SubResource("BoxShape3D_1eoqq")
+
+[node name="Wall_NE" parent="." index="8" unique_id=1525912831]
+surface_material_override/0 = ExtResource("2_1eoqq")
+
+[node name="FloorCollision" type="StaticBody3D" parent="Wall_NE" index="0" unique_id=102188276]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_NE/FloorCollision" index="0" unique_id=1300430218]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+shape = SubResource("BoxShape3D_1eoqq")
