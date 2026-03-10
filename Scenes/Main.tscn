@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://d3cu02b2r4cit"]
+
+[ext_resource type="PackedScene" uid="uid://d2rb78ta5npe" path="res://Objects/Player.tscn" id="1_r150o"]
+[ext_resource type="MeshLibrary" uid="uid://dbm3a27v6m1ne" path="res://MeshLibrary_Main.tres" id="3_rgh2o"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_r150o"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_idj7w"]
+
+[node name="Origin" type="Node3D" unique_id=290910746]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1859743393]
+transform = Transform3D(0.60238636, 0.50106955, -0.62133723, 0, 0.7784185, 0.6277457, 0.79820466, -0.37814543, 0.46890867, 0, 0, 0)
+
+[node name="GroundPlane" type="StaticBody3D" parent="." unique_id=1864508386]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundPlane" unique_id=1073119535]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("WorldBoundaryShape3D_r150o")
+disabled = true
+
+[node name="Player" parent="." unique_id=897261026 instance=ExtResource("1_r150o")]
+transform = Transform3D(0.64278764, 0, 0.76604444, 0, 1, 0, -0.76604444, 0, 0.64278764, 0, 0, 0)
+
+[node name="GridMap" type="GridMap" parent="." unique_id=1134927452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+mesh_library = ExtResource("3_rgh2o")
+physics_material = SubResource("PhysicsMaterial_idj7w")
+cell_size = Vector3(2, 0.04, 2)
+data = {
+"cells": PackedInt32Array(65534, 65534, 1, 65534, 65535, 1, 65534, 0, 1, 65534, 1, 1, 65535, 65534, 1, 65535, 65535, 1, 65535, 0, 1, 65535, 1, 1, 0, 65534, 1, 0, 65535, 1, 0, 0, 1, 0, 1, 1, 1, 65534, 1, 1, 65535, 1, 1, 0, 1, 1, 1, 1, 65532, 65532, 1, 65532, 65533, 1, 65532, 65534, 1, 65532, 65535, 1, 65532, 0, 1, 65532, 1, 1, 65532, 2, 1, 65532, 3, 1, 65533, 65532, 1, 65533, 65533, 1, 65533, 65534, 1, 65533, 65535, 1, 65533, 0, 1, 65533, 1, 1, 65533, 2, 1, 65533, 3, 1, 65534, 65532, 1, 65534, 65533, 1, 65534, 2, 1, 65534, 3, 1, 65535, 65532, 1, 65535, 65533, 1, 65535, 2, 1, 65535, 3, 1, 0, 65532, 1, 0, 65533, 1, 0, 2, 1, 0, 3, 1, 1, 65532, 1, 1, 65533, 1, 1, 2, 1, 1, 3, 1, 2, 65532, 1, 2, 65533, 1, 2, 65534, 1, 2, 65535, 1, 2, 0, 1, 2, 1, 1, 2, 2, 1, 2, 3, 1, 3, 65532, 1, 3, 65533, 1, 3, 65534, 1, 3, 65535, 1, 3, 0, 1, 3, 1, 1, 3, 2, 1, 3, 3, 1)
+}

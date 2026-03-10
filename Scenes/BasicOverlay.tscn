@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://qprg0p7oaf47"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xaol8"]
+font_size = 27
+outline_size = 1
+
+[node name="BasicOverlay" type="Control" unique_id=1845293332]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="." unique_id=1374013094]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Player Heart Rate: 0 BPM"
+label_settings = SubResource("LabelSettings_xaol8")

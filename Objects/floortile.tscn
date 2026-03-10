@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c85urmx2lt5fa"]
+
+[ext_resource type="Texture2D" uid="uid://bnwqn7ufj7s8a" path="res://Textures/purplebrick.png" id="1_te5am"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_glv2v"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q5vaj"]
+albedo_texture = ExtResource("1_te5am")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_te5am"]
+size = Vector3(2, 1, 2)
+
+[node name="Node3D" type="Node3D" unique_id=2012621082]
+
+[node name="FloorTile" type="MeshInstance3D" parent="." unique_id=1239513180]
+mesh = SubResource("PlaneMesh_glv2v")
+surface_material_override/0 = SubResource("StandardMaterial3D_q5vaj")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="FloorTile" unique_id=405392752]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="FloorTile/StaticBody3D" unique_id=1959578413]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_te5am")
