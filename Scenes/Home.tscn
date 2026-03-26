@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://dkad5jjwqu6xf"]
+
+[ext_resource type="PackedScene" uid="uid://cam3351njem06" path="res://Objects/Dresser.res" id="1_3wroe"]
+[ext_resource type="PackedScene" uid="uid://d2rb78ta5npe" path="res://Objects/Player.tscn" id="2_oauki"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xtytc"]
+size = Vector3(10, 1, 10)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3wroe"]
+size = Vector3(10, 1, 10)
+
+[node name="Home" type="Node3D" unique_id=310100371]
+
+[node name="Environment" type="Node3D" parent="." unique_id=2009282420]
+
+[node name="Architecture" type="Node3D" parent="Environment" unique_id=493982273]
+
+[node name="Floor" type="Node3D" parent="Environment/Architecture" unique_id=211244034]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Architecture/Floor" unique_id=832192033]
+mesh = SubResource("BoxMesh_xtytc")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Environment/Architecture/Floor" unique_id=566206913]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Architecture/Floor/StaticBody3D" unique_id=72813504]
+shape = SubResource("BoxShape3D_3wroe")
+
+[node name="Furniture" type="Node3D" parent="Environment" unique_id=1787756780]
+
+[node name="Dresser" parent="Environment/Furniture" unique_id=946099763 instance=ExtResource("1_3wroe")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6236207, 0, -1.3224516)
+
+[node name="Lighting" type="Node3D" parent="Environment" unique_id=1699047171]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Environment/Lighting" unique_id=986367171]
+transform = Transform3D(0.7503591, -0.123360254, 0.64941776, -0.24862641, 0.8576255, 0.45018166, -0.6124918, -0.49926043, 0.61285657, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Player" parent="." unique_id=897261026 instance=ExtResource("2_oauki")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
+
+[node name="CameraPivot" parent="Player" index="1" unique_id=1917672435]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.203, 0)
+
+[node name="Camera3D" parent="Player/CameraPivot" index="0" unique_id=568356542]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2100528, 0)
+cull_mask = 1048573
+
+[node name="Player" parent="Player/player_model" parent_id_path=PackedInt32Array(897261026, 777095768) index="0" unique_id=1070727492]
+layers = 2
+
+[editable path="Player"]
+[editable path="Player/player_model"]

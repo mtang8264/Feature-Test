@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Feature Test"
-run/main_scene="uid://d3cu02b2r4cit"
+run/main_scene="uid://dkad5jjwqu6xf"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
