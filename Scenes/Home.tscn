@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dkad5jjwqu6xf"]
 
 [ext_resource type="PackedScene" uid="uid://cam3351njem06" path="res://Objects/Dresser.res" id="1_3wroe"]
+[ext_resource type="PackedScene" uid="uid://du48ci7ux121k" path="res://Objects/picture_frame.res" id="2_biidh"]
 [ext_resource type="PackedScene" uid="uid://d2rb78ta5npe" path="res://Objects/Player.tscn" id="2_oauki"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_xtytc"]
@@ -30,6 +31,9 @@ shape = SubResource("BoxShape3D_3wroe")
 
 [node name="Dresser" parent="Environment/Furniture" unique_id=946099763 instance=ExtResource("1_3wroe")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6236207, 0, -1.3224516)
+
+[node name="PictureFrame" parent="Environment/Furniture/Dresser" unique_id=818932709 instance=ExtResource("2_biidh")]
+transform = Transform3D(0.568088, 0.24194455, -0.7865996, 0, 0.9558084, 0.29399028, 0.8229678, -0.16701235, 0.5429833, 0.56842375, 1.0097963, 0)
 
 [node name="Lighting" type="Node3D" parent="Environment" unique_id=1699047171]
 
