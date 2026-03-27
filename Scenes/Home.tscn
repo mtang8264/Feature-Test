@@ -1,14 +1,15 @@
 [gd_scene format=3 uid="uid://dkad5jjwqu6xf"]
 
 [ext_resource type="PackedScene" uid="uid://cam3351njem06" path="res://Objects/Dresser.res" id="1_3wroe"]
+[ext_resource type="Material" uid="uid://siwgrsrp3hje" path="res://Materials/Mat_Floor.tres" id="1_vtlm0"]
 [ext_resource type="PackedScene" uid="uid://du48ci7ux121k" path="res://Objects/picture_frame.res" id="2_biidh"]
 [ext_resource type="PackedScene" uid="uid://d2rb78ta5npe" path="res://Objects/Player.tscn" id="2_oauki"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_xtytc"]
-size = Vector3(10, 1, 10)
+size = Vector3(100, 1, 100)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_3wroe"]
-size = Vector3(10, 1, 10)
+size = Vector3(100, 1, 100)
 
 [node name="Home" type="Node3D" unique_id=310100371]
 
@@ -16,11 +17,10 @@ size = Vector3(10, 1, 10)
 
 [node name="Architecture" type="Node3D" parent="Environment" unique_id=493982273]
 
-[node name="Floor" type="Node3D" parent="Environment/Architecture" unique_id=211244034]
+[node name="Floor" type="MeshInstance3D" parent="Environment/Architecture" unique_id=832192033]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Environment/Architecture/Floor" unique_id=832192033]
 mesh = SubResource("BoxMesh_xtytc")
+surface_material_override/0 = ExtResource("1_vtlm0")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Environment/Architecture/Floor" unique_id=566206913]
 
