@@ -1,6 +1,7 @@
 [gd_resource type="ShaderMaterial" format=3 uid="uid://siwgrsrp3hje"]
 
 [ext_resource type="Shader" uid="uid://chb2r34610jxj" path="res://Shaders/Tiled.tres" id="1_lat52"]
+[ext_resource type="Texture2D" uid="uid://c1g34tc4adcp8" path="res://Textures/WoodFloor.jpg" id="2_iqb6n"]
 
 [resource]
 render_priority = 0
@@ -8,4 +9,5 @@ shader = ExtResource("1_lat52")
 shader_parameter/Tint_Color = false
 shader_parameter/ScaleX = 200.00000949930148
 shader_parameter/ScaleZ = 100.00000474930148
+shader_parameter/Texture = ExtResource("2_iqb6n")
 shader_parameter/Color = Color(0.6836854, 0.483876, 0.16840446, 1)
