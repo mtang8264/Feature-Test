@@ -3,7 +3,10 @@ extends CharacterBody3D
 
 const SPEED = 2.0
 const JUMP_VELOCITY = 10
-const TURN_SPEED = 3
+const TURN_SPEED = 0.25
+const NOD_SPEED = 0.1
+
+@onready var cam : Camera3D = find_child("Camera3D")
 
 func _physics_process(delta: float) -> void:
 	velocity += basis.z * delta
@@ -13,25 +16,35 @@ func _physics_process(delta: float) -> void:
 		velocity += get_gravity() * delta * 50
 
 	# Handle jump.
+	# Jump is currently disabled.
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor() and false:
 		velocity.y = JUMP_VELOCITY
 
 	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var input_dir := Input.get_vector("turn_left", "turn_right", "walk_forward", "walk_backward")
-	if abs(input_dir.x) > 0:
-		rotate(basis.y, -1 * input_dir.x * deg_to_rad(TURN_SPEED))
-		
+	var input_dir := Input.get_vector("walk_left", "walk_right", "walk_forward", "walk_backward")
+
+	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+	
+	if direction:
+		velocity.x = direction.x * SPEED
+		velocity.z = direction.z * SPEED
+	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
-	else:
-		var direction := (transform.basis * Vector3(0, 0, input_dir.y)).normalized()
-	
-		if direction:
-			velocity.x = direction.x * SPEED
-			velocity.z = direction.z * SPEED
-		else:
-			velocity.x = move_toward(velocity.x, 0, SPEED)
-			velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+
+
+func _input(event: InputEvent) -> void:
+	# Mouse motion that translates to camera movement
+	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+		_camera_move(event.screen_relative)
+
+func _camera_move(motion: Vector2):
+	# Turn the whole player so that the walking is alwasy forward
+	var turn := -1 * deg_to_rad(motion.x * TURN_SPEED)
+	rotate(up_direction, turn)
+	# Nod just the camera so nothing gets weird
+	var nod := -1 * deg_to_rad(motion.y * NOD_SPEED)
+	cam.rotate_x(nod)
+	pass

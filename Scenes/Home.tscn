@@ -17,3 +17,5 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0919563, 0, 5.466872)
 
 [node name="Interior" parent="." unique_id=1745023626 instance=ExtResource("2_biidh")]
+
+[editable path="Player"]
