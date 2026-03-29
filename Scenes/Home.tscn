@@ -14,6 +14,6 @@ transform = Transform3D(0.7503591, -0.123360254, 0.64941776, -0.24862641, 0.8576
 shadow_enabled = true
 
 [node name="Player" parent="." unique_id=897261026 instance=ExtResource("2_oauki")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3176706, 0, 5.466872)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0919563, 0, 5.466872)
 
 [node name="Interior" parent="." unique_id=1409525571 instance=ExtResource("2_biidh")]
