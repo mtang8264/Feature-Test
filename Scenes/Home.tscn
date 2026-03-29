@@ -16,4 +16,4 @@ shadow_enabled = true
 [node name="Player" parent="." unique_id=897261026 instance=ExtResource("2_oauki")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0919563, 0, 5.466872)
 
-[node name="Interior" parent="." unique_id=1409525571 instance=ExtResource("2_biidh")]
+[node name="Interior" parent="." unique_id=1745023626 instance=ExtResource("2_biidh")]
