@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cwdiiftjtfaeq"]
+
+[ext_resource type="Shader" uid="uid://chb2r34610jxj" path="res://Shaders/Tiled.tres" id="1_gp0r5"]
+[ext_resource type="Texture2D" uid="uid://brftit4w6w6pa" path="res://Textures/Birch plywood.jpg" id="2_jxati"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_gp0r5")
+shader_parameter/Tint_Color = false
+shader_parameter/ScaleX = 10.0
+shader_parameter/ScaleZ = 10.0
+shader_parameter/Texture = ExtResource("2_jxati")
+shader_parameter/Color = Color(0.293786, 0.205876, 0.090838, 1)

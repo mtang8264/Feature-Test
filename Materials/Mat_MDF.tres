@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bp2e3fhf26r3l"]
+
+[ext_resource type="Shader" uid="uid://chb2r34610jxj" path="res://Shaders/Tiled.tres" id="1_ppo6c"]
+[ext_resource type="Texture2D" uid="uid://hlq0sxfirybm" path="res://Textures/MDF Fiberboard.jpg" id="2_lvn74"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_ppo6c")
+shader_parameter/Tint_Color = false
+shader_parameter/ScaleX = 10.0
+shader_parameter/ScaleZ = 10.0
+shader_parameter/Texture = ExtResource("2_lvn74")
+shader_parameter/Color = Color(0.293786, 0.205876, 0.090838, 1)

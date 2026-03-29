@@ -1,10 +1,7 @@
 [gd_scene format=3 uid="uid://dkad5jjwqu6xf"]
 
-[ext_resource type="PackedScene" uid="uid://bs4aaaugp7qfp" path="res://Models/Interior.glb" id="1_oauki"]
+[ext_resource type="PackedScene" uid="uid://dk2n5vlfp6o4v" path="res://Objects/interior.res" id="2_biidh"]
 [ext_resource type="PackedScene" uid="uid://d2rb78ta5npe" path="res://Objects/Player.tscn" id="2_oauki"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_oauki"]
-size = Vector3(20, 1, 20)
 
 [node name="Home" type="Node3D" unique_id=310100371]
 
@@ -16,15 +13,7 @@ size = Vector3(20, 1, 20)
 transform = Transform3D(0.7503591, -0.123360254, 0.64941776, -0.24862641, 0.8576255, 0.45018166, -0.6124918, -0.49926043, 0.61285657, 0, 0, 0)
 shadow_enabled = true
 
-[node name="Interior" parent="Environment" unique_id=1572105155 instance=ExtResource("1_oauki")]
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Environment/Interior" unique_id=993164332]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Interior/StaticBody3D" unique_id=1480442568]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
-shape = SubResource("BoxShape3D_oauki")
-
 [node name="Player" parent="." unique_id=897261026 instance=ExtResource("2_oauki")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3176706, 0, 5.466872)
 
-[editable path="Environment/Interior"]
+[node name="Interior" parent="." unique_id=1409525571 instance=ExtResource("2_biidh")]

@@ -7,7 +7,7 @@
 render_priority = 0
 shader = ExtResource("1_1htej")
 shader_parameter/Tint_Color = true
-shader_parameter/ScaleX = 3.00000014180148
-shader_parameter/ScaleZ = 2.00000009430148
+shader_parameter/ScaleX = 5.0
+shader_parameter/ScaleZ = 5.00000023680148
 shader_parameter/Texture = ExtResource("2_qsumb")
 shader_parameter/Color = Color(1, 1, 1, 1)
