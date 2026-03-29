@@ -1,10 +1,9 @@
 class_name PlayerController
 extends CharacterBody3D
 
-
-const SPEED = 8.5
+const SPEED = 2.0
 const JUMP_VELOCITY = 10
-const TURN_SPEED = 7.5
+const TURN_SPEED = 3
 
 func _physics_process(delta: float) -> void:
 	velocity += basis.z * delta
