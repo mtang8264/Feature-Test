@@ -1,58 +1,14 @@
 [gd_scene format=3 uid="uid://dkad5jjwqu6xf"]
 
-[ext_resource type="PackedScene" uid="uid://cam3351njem06" path="res://Objects/Dresser.res" id="1_3wroe"]
-[ext_resource type="Material" uid="uid://siwgrsrp3hje" path="res://Materials/Mat_Floor.tres" id="1_vtlm0"]
-[ext_resource type="PackedScene" uid="uid://du48ci7ux121k" path="res://Objects/picture_frame.res" id="2_biidh"]
-[ext_resource type="Material" uid="uid://cco6e8ck0gjp0" path="res://Materials/Mat_WallStucco.tres" id="2_cxprx"]
+[ext_resource type="PackedScene" uid="uid://bs4aaaugp7qfp" path="res://Models/Interior.glb" id="1_oauki"]
 [ext_resource type="PackedScene" uid="uid://d2rb78ta5npe" path="res://Objects/Player.tscn" id="2_oauki"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_xtytc"]
-material = ExtResource("1_vtlm0")
-size = Vector3(100, 1, 100)
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_3wroe"]
-size = Vector3(100, 1, 100)
-
-[sub_resource type="BoxMesh" id="BoxMesh_bpuqj"]
-lightmap_size_hint = Vector2i(14, 21)
-material = ExtResource("2_cxprx")
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_xlxvy"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_oauki"]
+size = Vector3(20, 1, 20)
 
 [node name="Home" type="Node3D" unique_id=310100371]
 
 [node name="Environment" type="Node3D" parent="." unique_id=2009282420]
-
-[node name="Architecture" type="Node3D" parent="Environment" unique_id=493982273]
-
-[node name="Floor" type="MeshInstance3D" parent="Environment/Architecture" unique_id=832192033]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
-mesh = SubResource("BoxMesh_xtytc")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Environment/Architecture/Floor" unique_id=566206913]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Architecture/Floor/StaticBody3D" unique_id=72813504]
-shape = SubResource("BoxShape3D_3wroe")
-
-[node name="Walls" type="Node3D" parent="Environment/Architecture" unique_id=179927687]
-
-[node name="Wall1" type="MeshInstance3D" parent="Environment/Architecture/Walls" unique_id=679760585]
-transform = Transform3D(2, 0, 0, 0, 3, 0, 0, 0, 0.5, 1.5794463, 1.5, -1.8952084)
-mesh = SubResource("BoxMesh_bpuqj")
-surface_material_override/0 = ExtResource("2_cxprx")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Environment/Architecture/Walls/Wall1" unique_id=1533145776]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Architecture/Walls/Wall1/StaticBody3D" unique_id=584624948]
-shape = SubResource("BoxShape3D_xlxvy")
-
-[node name="Furniture" type="Node3D" parent="Environment" unique_id=1787756780]
-
-[node name="Dresser" parent="Environment/Furniture" unique_id=946099763 instance=ExtResource("1_3wroe")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6236207, 0, -1.3224516)
-
-[node name="PictureFrame" parent="Environment/Furniture/Dresser" unique_id=818932709 instance=ExtResource("2_biidh")]
-transform = Transform3D(0.568088, 0.24194455, -0.7865996, 0, 0.9558084, 0.29399028, 0.8229678, -0.16701235, 0.5429833, 0.56842375, 1.0097963, 0)
 
 [node name="Lighting" type="Node3D" parent="Environment" unique_id=1699047171]
 
@@ -60,18 +16,15 @@ transform = Transform3D(0.568088, 0.24194455, -0.7865996, 0, 0.9558084, 0.293990
 transform = Transform3D(0.7503591, -0.123360254, 0.64941776, -0.24862641, 0.8576255, 0.45018166, -0.6124918, -0.49926043, 0.61285657, 0, 0, 0)
 shadow_enabled = true
 
+[node name="Interior" parent="Environment" unique_id=1572105155 instance=ExtResource("1_oauki")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Environment/Interior" unique_id=993164332]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Environment/Interior/StaticBody3D" unique_id=1480442568]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_oauki")
+
 [node name="Player" parent="." unique_id=897261026 instance=ExtResource("2_oauki")]
-transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3176706, 0, 5.466872)
 
-[node name="CameraPivot" parent="Player" index="1" unique_id=1917672435]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.203, 0)
-
-[node name="Camera3D" parent="Player/CameraPivot" index="0" unique_id=568356542]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2100528, 0)
-cull_mask = 1048573
-
-[node name="Player" parent="Player/player_model" parent_id_path=PackedInt32Array(897261026, 777095768) index="0" unique_id=1070727492]
-layers = 2
-
-[editable path="Player"]
-[editable path="Player/player_model"]
+[editable path="Environment/Interior"]

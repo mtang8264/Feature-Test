@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d2rb78ta5npe"]
 
 [ext_resource type="Script" uid="uid://cy1bnwnmr4rxp" path="res://Scripts/PlayerController.gd" id="1_8r7yd"]
-[ext_resource type="PackedScene" uid="uid://yiv3hm2uef81" path="res://Models/player_model.blend" id="2_n6db0"]
+[ext_resource type="PackedScene" uid="uid://0tbu7nl8d0go" path="res://Models/player_model.fbx" id="2_n6db0"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_yk4ok"]
 size = Vector3(1, 1.6677246, 0.25317383)
@@ -14,14 +14,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.830374, 0)
 shape = SubResource("BoxShape3D_yk4ok")
 
 [node name="CameraPivot" type="Node3D" parent="." unique_id=1917672435]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.20289254, 1.4242127)
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot" unique_id=568356542]
-transform = Transform3D(1, 0, 0, 0, 0.959003, 0.2833961, 0, -0.2833961, 0.959003, 0, 1.464888, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.464888, 0)
 
 [node name="AudioListener3D" type="AudioListener3D" parent="." unique_id=1982974940]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.464888, 0)
 current = true
 
-[node name="player_model" parent="." unique_id=777095768 instance=ExtResource("2_n6db0")]
-transform = Transform3D(0.87, 0, 0, 0, 0.87, 0, 0, 0, 0.87, 0, 0, 0)
+[node name="player_model" parent="." unique_id=918824759 instance=ExtResource("2_n6db0")]
+transform = Transform3D(0.83, 0, 0, 0, 0.83, 0, 0, 0, 0.83, 0, 0, 0)

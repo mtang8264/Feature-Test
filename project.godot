@@ -24,6 +24,46 @@ BasicOverlay="*uid://qprg0p7oaf47"
 window/size/viewport_width=1920
 window/size/viewport_height=1080
 
+[importer_defaults]
+
+scene={
+"_subresources": {
+"materials": {
+"Wood Planks": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/Mat_Floor.tres",
+"use_external/path": "uid://siwgrsrp3hje"
+}
+}
+},
+"animation/fps": 30,
+"animation/import": true,
+"animation/import_rest_as_RESET": false,
+"animation/remove_immutable_tracks": true,
+"animation/trimming": false,
+"gltf/embedded_image_handling": 2,
+"gltf/naming_version": 2,
+"import_script/path": "",
+"materials/extract": 0,
+"materials/extract_format": 0,
+"materials/extract_path": "",
+"meshes/create_shadow_meshes": true,
+"meshes/ensure_tangents": true,
+"meshes/force_disable_compression": false,
+"meshes/generate_lods": true,
+"meshes/light_baking": 1,
+"meshes/lightmap_texel_size": 0.2,
+"nodes/apply_root_scale": true,
+"nodes/import_as_skeleton_bones": false,
+"nodes/root_name": "",
+"nodes/root_scale": 1.0,
+"nodes/root_script": null,
+"nodes/root_type": "",
+"nodes/use_name_suffixes": true,
+"nodes/use_node_type_suffixes": true,
+"skins/use_named_skins": true
+}
+
 [input]
 
 walk_forward={

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://0tbu7nl8d0go"
-path="res://.godot/imported/player_model.fbx-ff472e277b266c4a7dbe97d78c355bd9.scn"
+uid="uid://cij0r03j35bs0"
+path="res://.godot/imported/Dresser.glb-83e78dcae30d84565be5a67190bdfbe1.scn"
 
 [deps]
 
-source_file="res://Models/player_model.fbx"
-dest_files=["res://.godot/imported/player_model.fbx-ff472e277b266c4a7dbe97d78c355bd9.scn"]
+source_file="res://Models/Dresser.glb"
+dest_files=["res://.godot/imported/Dresser.glb-83e78dcae30d84565be5a67190bdfbe1.scn"]
 
 [params]
 
@@ -30,7 +30,7 @@ meshes/force_disable_compression=false
 skins/use_named_skins=true
 animation/import=true
 animation/fps=30
-animation/trimming=true
+animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
@@ -38,7 +38,5 @@ materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
 _subresources={}
-fbx/importer=0
-fbx/allow_geometry_helper_nodes=false
-fbx/embedded_image_handling=1
-fbx/naming_version=2
+gltf/naming_version=2
+gltf/embedded_image_handling=0
