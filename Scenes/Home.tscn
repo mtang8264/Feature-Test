@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dk2n5vlfp6o4v" path="res://Objects/interior.res" id="2_biidh"]
 [ext_resource type="PackedScene" uid="uid://d2rb78ta5npe" path="res://Objects/Player.tscn" id="2_oauki"]
+[ext_resource type="PackedScene" uid="uid://bmafigyjcdmbp" path="res://Objects/alarm_clock.res" id="3_biidh"]
 
 [node name="Home" type="Node3D" unique_id=310100371]
 
@@ -18,4 +19,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0919563, 0, 5.466872)
 
 [node name="Interior" parent="." unique_id=1745023626 instance=ExtResource("2_biidh")]
 
+[node name="alarm_clock" parent="Interior" unique_id=629280844 instance=ExtResource("3_biidh")]
+transform = Transform3D(0.901508, 0, 0.43276244, 0, 1, 0, -0.43276244, 0, 0.901508, -1.8330811, 0.91255546, 1.2414913)
+
 [editable path="Player"]
+[editable path="Player/player_model"]
