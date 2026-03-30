@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://dk2n5vlfp6o4v" path="res://Objects/interior.res" id="2_biidh"]
 [ext_resource type="PackedScene" uid="uid://d2rb78ta5npe" path="res://Objects/Player.tscn" id="2_oauki"]
 [ext_resource type="PackedScene" uid="uid://bmafigyjcdmbp" path="res://Objects/alarm_clock.res" id="3_biidh"]
+[ext_resource type="PackedScene" uid="uid://cam3351njem06" path="res://Objects/dresser.res" id="4_vtlm0"]
+[ext_resource type="PackedScene" uid="uid://du48ci7ux121k" path="res://Objects/picture_frame.res" id="5_cxprx"]
 
 [node name="Home" type="Node3D" unique_id=310100371]
 
@@ -19,8 +21,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0919563, 0, 5.466872)
 
 [node name="Interior" parent="." unique_id=1745023626 instance=ExtResource("2_biidh")]
 
-[node name="alarm_clock" parent="Interior" unique_id=629280844 instance=ExtResource("3_biidh")]
-transform = Transform3D(0.901508, 0, 0.43276244, 0, 1, 0, -0.43276244, 0, 0.901508, -1.8330811, 0.91255546, 1.2414913)
+[node name="dresser" parent="Interior" unique_id=455545927 instance=ExtResource("4_vtlm0")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.991117, 0, 1.9974048)
+
+[node name="alarm_clock" parent="Interior/dresser" unique_id=629280844 instance=ExtResource("3_biidh")]
+transform = Transform3D(0.6392914, 0, -0.7689647, 0, 1, 0, 0.7689647, 0, 0.6392914, 0.7559135, 0.91255546, 0.011780739)
+
+[node name="PictureFrame" parent="Interior/dresser" unique_id=424061881 instance=ExtResource("5_cxprx")]
+transform = Transform3D(0.7660444, -0.3668476, 0.5278244, 0, 0.8211492, 0.5707135, -0.6427875, -0.43719196, 0.6290367, -0.7039169, 1.0084554, 0)
 
 [editable path="Player"]
 [editable path="Player/player_model"]

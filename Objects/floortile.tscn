@@ -1,7 +1,0 @@
-[gd_scene format=3 uid="uid://c85urmx2lt5fa"]
-
-[ext_resource type="PackedScene" uid="uid://c8djpg385hh2h" path="res://Models/Blank_Grid_Tiles.blend" id="1_te5am"]
-
-[node name="Node3D" type="Node3D" unique_id=2012621082]
-
-[node name="GridTIles" parent="." unique_id=545163925 instance=ExtResource("1_te5am")]
