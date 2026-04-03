@@ -39,41 +39,6 @@ materials/extract_format=0
 materials/extract_path=""
 _subresources={
 "materials": {
-"Backing": {
-"use_external/enabled": true,
-"use_external/fallback_path": "res://Materials/Mat_MDF.tres",
-"use_external/path": "uid://bp2e3fhf26r3l"
-},
-"Frame": {
-"use_external/enabled": false,
-"use_external/fallback_path": "",
-"use_external/path": "uid://blah3hpy71fqq"
-},
-"MDF": {
-"use_external/enabled": true,
-"use_external/fallback_path": "res://Materials/Mat_MDF.tres",
-"use_external/path": "uid://bp2e3fhf26r3l"
-},
-"Picture": {
-"use_external/enabled": true,
-"use_external/fallback_path": "res://Materials/PictureFrame_Picture.tres",
-"use_external/path": "uid://blah3hpy71fqq"
-},
-"Plywood": {
-"use_external/enabled": true,
-"use_external/fallback_path": "res://Materials/Mat_Plywood.tres",
-"use_external/path": "uid://cwdiiftjtfaeq"
-},
-"Stucco": {
-"use_external/enabled": true,
-"use_external/fallback_path": "res://Materials/Mat_WallStucco.tres",
-"use_external/path": "uid://cco6e8ck0gjp0"
-},
-"StuccoCeiling": {
-"use_external/enabled": true,
-"use_external/fallback_path": "res://Materials/Mat_CeilingStucco.tres",
-"use_external/path": "uid://udwebtyvgr1c"
-},
 "Wood Planks": {
 "use_external/enabled": true,
 "use_external/fallback_path": "res://Materials/Mat_Floor.tres",
