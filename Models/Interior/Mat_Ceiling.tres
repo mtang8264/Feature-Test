@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://udwebtyvgr1c"]
+
+[ext_resource type="Shader" uid="uid://chb2r34610jxj" path="res://Shaders/Tiled.tres" id="1_eagw3"]
+[ext_resource type="Texture2D" uid="uid://b5rr5nxwb1gen" path="res://Textures/stucco.png" id="2_8nktu"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_eagw3")
+shader_parameter/Tint_Color = true
+shader_parameter/ScaleX = 12.8
+shader_parameter/ScaleZ = 12.800000607301481
+shader_parameter/Texture = ExtResource("2_8nktu")
+shader_parameter/Color = Color(1, 1, 1, 1)

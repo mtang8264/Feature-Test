@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b4kknrac7tfxp"
-path="res://.godot/imported/AlarmClock.glb-8243ac0707d736c79b0958b7aedcf2ef.scn"
+uid="uid://75vxjd68hli"
+path="res://.godot/imported/PictureFrame.glb-3cf6379b26fa71809e4ac29467598b60.scn"
 
 [deps]
 
-source_file="res://Models/AlarmClock.glb"
-dest_files=["res://.godot/imported/AlarmClock.glb-8243ac0707d736c79b0958b7aedcf2ef.scn"]
+source_file="res://Models/PictureFrame/PictureFrame.glb"
+dest_files=["res://.godot/imported/PictureFrame.glb-3cf6379b26fa71809e4ac29467598b60.scn"]
 
 [params]
 
@@ -17,7 +17,7 @@ nodes/root_type=""
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true
-nodes/root_scale=0.00999999999999999
+nodes/root_scale=10.0
 nodes/import_as_skeleton_bones=false
 nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
@@ -37,6 +37,14 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={}
+_subresources={
+"materials": {
+"Picture": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/PictureFrame_Picture.tres",
+"use_external/path": "uid://blah3hpy71fqq"
+}
+}
+}
 gltf/naming_version=2
-gltf/embedded_image_handling=2
+gltf/embedded_image_handling=0

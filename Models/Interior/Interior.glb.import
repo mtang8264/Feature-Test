@@ -1,0 +1,85 @@
+[remap]
+
+importer="scene"
+importer_version=1
+type="PackedScene"
+uid="uid://bs4aaaugp7qfp"
+path="res://.godot/imported/Interior.glb-a2d29c61f47fbcf10591d367477feb54.scn"
+
+[deps]
+
+source_file="res://Models/Interior/Interior.glb"
+dest_files=["res://.godot/imported/Interior.glb-a2d29c61f47fbcf10591d367477feb54.scn"]
+
+[params]
+
+nodes/root_type=""
+nodes/root_name=""
+nodes/root_script=null
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+nodes/import_as_skeleton_bones=false
+nodes/use_name_suffixes=true
+nodes/use_node_type_suffixes=true
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+meshes/force_disable_compression=false
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+animation/import_rest_as_RESET=false
+import_script/path=""
+materials/extract=0
+materials/extract_format=0
+materials/extract_path=""
+_subresources={
+"materials": {
+"Ceiling": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Interior/Mat_Ceiling.tres",
+"use_external/path": "uid://udwebtyvgr1c"
+},
+"Door": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/Mat_InteriorDoor_Slab.tres",
+"use_external/path": "uid://bodl0ncpffbel"
+},
+"Frame": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/Mat_InteriorDoor_Frame.tres",
+"use_external/path": "uid://b8mrunx8fq0ua"
+},
+"Hinge": {
+"use_external/enabled": false,
+"use_external/fallback_path": "",
+"use_external/path": ""
+},
+"NotVisible": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/Mat_Invisible.tres",
+"use_external/path": "uid://b6dsb04riguyy"
+},
+"Stair": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Interior/Mat_Stairs.tres",
+"use_external/path": "uid://dir6s8tda1iff"
+},
+"Walls": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Interior/Mat_Walls.tres",
+"use_external/path": "uid://cco6e8ck0gjp0"
+},
+"Wood Planks": {
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Models/Interior/Mat_Floor.tres",
+"use_external/path": "uid://siwgrsrp3hje"
+}
+}
+}
+gltf/naming_version=2
+gltf/embedded_image_handling=2

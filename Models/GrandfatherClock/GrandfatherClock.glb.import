@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://djuls7syvny5f"
-path="res://.godot/imported/GrandfatherClock.glb-2d46a1930da2fdf8ca17dcc7a3f636d8.scn"
+path="res://.godot/imported/GrandfatherClock.glb-55aa34d02cd471658ce4dd12a02f8775.scn"
 
 [deps]
 
-source_file="res://Models/GrandfatherClock.glb"
-dest_files=["res://.godot/imported/GrandfatherClock.glb-2d46a1930da2fdf8ca17dcc7a3f636d8.scn"]
+source_file="res://Models/GrandfatherClock/GrandfatherClock.glb"
+dest_files=["res://.godot/imported/GrandfatherClock.glb-55aa34d02cd471658ce4dd12a02f8775.scn"]
 
 [params]
 

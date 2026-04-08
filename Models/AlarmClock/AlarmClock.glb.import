@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bs4aaaugp7qfp"
-path="res://.godot/imported/Interior.glb-14f584a61dbcd65c8dd27c8508f816fa.scn"
+uid="uid://b4kknrac7tfxp"
+path="res://.godot/imported/AlarmClock.glb-30e54bccf5b45c2698217e4ce96a329b.scn"
 
 [deps]
 
-source_file="res://Models/Interior.glb"
-dest_files=["res://.godot/imported/Interior.glb-14f584a61dbcd65c8dd27c8508f816fa.scn"]
+source_file="res://Models/AlarmClock/AlarmClock.glb"
+dest_files=["res://.godot/imported/AlarmClock.glb-30e54bccf5b45c2698217e4ce96a329b.scn"]
 
 [params]
 
@@ -17,7 +17,7 @@ nodes/root_type=""
 nodes/root_name=""
 nodes/root_script=null
 nodes/apply_root_scale=true
-nodes/root_scale=1.0
+nodes/root_scale=0.00999999999999999
 nodes/import_as_skeleton_bones=false
 nodes/use_name_suffixes=true
 nodes/use_node_type_suffixes=true
@@ -37,14 +37,6 @@ import_script/path=""
 materials/extract=0
 materials/extract_format=0
 materials/extract_path=""
-_subresources={
-"materials": {
-"Wood Planks": {
-"use_external/enabled": true,
-"use_external/fallback_path": "res://Materials/Mat_Floor.tres",
-"use_external/path": "uid://siwgrsrp3hje"
-}
-}
-}
+_subresources={}
 gltf/naming_version=2
 gltf/embedded_image_handling=2

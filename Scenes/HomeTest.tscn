@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://18iuluud0skc"]
+
+[ext_resource type="PackedScene" uid="uid://d2rb78ta5npe" path="res://Objects/Player.tscn" id="1_b7bth"]
+[ext_resource type="PackedScene" uid="uid://c04pvav1510dj" path="res://Objects/interior_w_props.res" id="2_srhrv"]
+
+[node name="Home" type="Node3D" unique_id=310100371]
+
+[node name="Environment" type="Node3D" parent="." unique_id=2009282420]
+
+[node name="Lighting" type="Node3D" parent="Environment" unique_id=1699047171]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Environment/Lighting" unique_id=986367171]
+transform = Transform3D(0.7503591, -0.123360254, 0.64941776, -0.24862641, 0.8576255, 0.45018166, -0.6124918, -0.49926043, 0.61285657, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Player" parent="." unique_id=897261026 instance=ExtResource("1_b7bth")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0919563, 0, 5.466872)
+
+[node name="Interior_w_props" parent="." unique_id=643674095 instance=ExtResource("2_srhrv")]
+
+[editable path="Player"]
+[editable path="Player/player_model"]

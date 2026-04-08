@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cco6e8ck0gjp0"]
+
+[ext_resource type="Shader" uid="uid://chb2r34610jxj" path="res://Shaders/Tiled.tres" id="1_5o2pb"]
+[ext_resource type="Texture2D" uid="uid://4pwlmc5ch3qw" path="res://Textures/Plaster Painted Wall.jpg" id="2_sqsxt"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_5o2pb")
+shader_parameter/Tint_Color = false
+shader_parameter/ScaleX = 10.0
+shader_parameter/ScaleZ = 10.000000474301482
+shader_parameter/Texture = ExtResource("2_sqsxt")
+shader_parameter/Color = Color(1, 1, 1, 1)
