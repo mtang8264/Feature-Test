@@ -1,0 +1,16 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://cwpl8yrh6p3la"]
+
+[ext_resource type="Shader" uid="uid://cyo62ed7m1fp3" path="res://Shaders/Tiled_w_Normal.tres" id="1_3fo4a"]
+[ext_resource type="Texture2D" uid="uid://goofm5lqgrp6" path="res://Textures/Metal (Frying Pan).jpg" id="1_7byns"]
+[ext_resource type="Texture2D" uid="uid://bwc58whrr2c4c" path="res://Textures/Metal (Frying Pan) NRM.png" id="2_3fo4a"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_3fo4a")
+shader_parameter/Tint_Color = true
+shader_parameter/ScaleX = 1.0
+shader_parameter/ScaleZ = 1.00000004680148
+shader_parameter/Texture = ExtResource("1_7byns")
+shader_parameter/Color = Color(0.9899172, 0.8635289, 0.4427177, 1)
+shader_parameter/Normal = ExtResource("2_3fo4a")
+shader_parameter/Normal_Depth = 0.25

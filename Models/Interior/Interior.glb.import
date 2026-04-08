@@ -55,9 +55,9 @@ _subresources={
 "use_external/path": "uid://b8mrunx8fq0ua"
 },
 "Hinge": {
-"use_external/enabled": false,
-"use_external/fallback_path": "",
-"use_external/path": ""
+"use_external/enabled": true,
+"use_external/fallback_path": "res://Materials/Mat_Metal.tres",
+"use_external/path": "uid://cwpl8yrh6p3la"
 },
 "NotVisible": {
 "use_external/enabled": true,
