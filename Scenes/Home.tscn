@@ -13,10 +13,6 @@
 
 [node name="Lighting" type="Node3D" parent="Environment" unique_id=1699047171]
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Environment/Lighting" unique_id=986367171]
-transform = Transform3D(0.7503591, -0.123360254, 0.64941776, -0.24862641, 0.8576255, 0.45018166, -0.6124918, -0.49926043, 0.61285657, 0, 0, 0)
-shadow_enabled = true
-
 [node name="Player" parent="." unique_id=897261026 instance=ExtResource("2_oauki")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0919563, 0, 5.466872)
 
@@ -33,7 +29,6 @@ transform = Transform3D(0.7660444, -0.3668476, 0.5278244, 0, 0.8211492, 0.570713
 
 [node name="GrandfatherClock" parent="Interior" unique_id=424820685 instance=ExtResource("6_bpuqj")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.290308, 1.1920929e-07, -1.6236762)
-pendulum_swing = true
 
 [editable path="Player"]
 [editable path="Player/player_model"]
