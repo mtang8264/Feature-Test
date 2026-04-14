@@ -1,5 +1,7 @@
 extends Node
 
+const MAP_REPEAT_OFFSET : Vector3 = Vector3(17.26285, -0.7112, 0.689834)
+
 func _ready() -> void:
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
