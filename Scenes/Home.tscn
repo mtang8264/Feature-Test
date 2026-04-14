@@ -16,7 +16,7 @@
 [node name="Player" parent="." unique_id=897261026 instance=ExtResource("2_oauki")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0919563, 0, 5.466872)
 
-[node name="Interior" parent="." unique_id=2145398111 instance=ExtResource("2_biidh")]
+[node name="Interior" parent="." unique_id=1845591789 instance=ExtResource("2_biidh")]
 
 [node name="dresser" parent="Interior" unique_id=455545927 instance=ExtResource("4_vtlm0")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -1.991117, 0, -0.07024929)
@@ -30,7 +30,7 @@ transform = Transform3D(0.7660444, -0.3668476, 0.5278244, 0, 0.8211492, 0.570713
 [node name="GrandfatherClock" parent="Interior" unique_id=424820685 instance=ExtResource("6_bpuqj")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 7.290308, 1.1920929e-07, -1.6236762)
 
-[node name="Interior2" parent="." unique_id=1845591789 instance=ExtResource("2_biidh")]
+[node name="Interior2" parent="." unique_id=1123696301 instance=ExtResource("2_biidh")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 17.263, -0.711, 0.69)
 
 [node name="dresser" parent="Interior2" unique_id=974681320 instance=ExtResource("4_vtlm0")]
