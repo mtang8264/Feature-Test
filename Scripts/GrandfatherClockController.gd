@@ -2,6 +2,7 @@ extends Node
 
 var timer := 0.5
 
+@export var use_master := true
 @export var hour: int = 2
 @export var minute: float = 55
 @export var pendulum_swing: bool = true
@@ -20,6 +21,10 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	if use_master:
+		hour = ClockMaster.hour
+		minute = ClockMaster.minute
+	
 	rotate_hour_hand()
 	rotate_minute_hand()
 	if pendulum_swing:

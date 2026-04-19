@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 BasicOverlay="*uid://qprg0p7oaf47"
 GameController="*uid://h0sx1r11aa8i"
+ClockMaster="*uid://dw8l728s1thkk"
 
 [display]
 
