@@ -9,6 +9,15 @@ const NOD_SPEED = 0.1
 @onready var cam : Camera3D = find_child("Camera3D")
 
 func _physics_process(delta: float) -> void:
+	if GameController.current_state == GameController.GAME_STATES.WALKING and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+		_player_movement(delta)
+
+func _input(event: InputEvent) -> void:
+	# Mouse motion that translates to camera movement
+	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
+		_camera_move(event.screen_relative)
+
+func _player_movement(delta: float) -> void:
 	velocity += basis.z * delta
 	
 	# Add the gravity.
@@ -33,12 +42,6 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
-
-
-func _input(event: InputEvent) -> void:
-	# Mouse motion that translates to camera movement
-	if event is InputEventMouseMotion and Input.mouse_mode == Input.MOUSE_MODE_CAPTURED:
-		_camera_move(event.screen_relative)
 
 func _camera_move(motion: Vector2):
 	# Turn the whole player so that the walking is alwasy forward

@@ -33,7 +33,7 @@ scene={
 "materials": {
 "Wood Planks": {
 "use_external/enabled": true,
-"use_external/fallback_path": "res://Materials/Mat_Floor.tres",
+"use_external/fallback_path": "res://Models/Interior/Mat_Floor.tres",
 "use_external/path": "uid://siwgrsrp3hje"
 }
 }
