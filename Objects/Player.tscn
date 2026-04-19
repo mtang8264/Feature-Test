@@ -5,9 +5,12 @@
 [ext_resource type="Script" uid="uid://c71cp0j6lnlck" path="res://Scripts/CameraClamp.gd" id="2_yk4ok"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_yk4ok"]
-size = Vector3(1, 1.6677246, 0.25317383)
+size = Vector3(0.55, 1.668, 0.253)
 
 [node name="Player" type="CharacterBody3D" unique_id=897261026]
+collision_mask = 15
+platform_floor_layers = 4294901762
+platform_wall_layers = 12
 script = ExtResource("1_8r7yd")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1479998357]
